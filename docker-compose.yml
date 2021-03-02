@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  swagger:
+    build:
+      context: ./
+    ports:
+      - "8001:8080"
+    environment:
+    - API_URL=/swagger.json
